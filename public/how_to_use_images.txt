@@ -1,0 +1,2 @@
+Put your logo.png or other images in this folder.
+You can then use them in code like this: <img src="/logo.png" />

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand-primary: #0A1D37;
+    --brand-accent: #F4B41A;
+    --brand-accent-hover: #D49B15;
+  }
+  
+  body {
+    @apply font-sans text-slate-900 antialiased bg-white;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn-accent {
+    @apply bg-[var(--brand-accent)] hover:bg-[var(--brand-accent-hover)] text-[var(--brand-primary)] font-bold py-3 px-8 rounded transition-all duration-300 uppercase tracking-wide text-sm;
+  }
+
+  .btn-outline {
+    @apply border-2 border-white/30 hover:border-white text-white font-bold py-3 px-8 rounded transition-all duration-300 uppercase tracking-wide text-sm;
+  }
+}
